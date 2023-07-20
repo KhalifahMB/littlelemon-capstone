@@ -20,7 +20,7 @@ class MenuViewTest(TestCase):
         response = self.client.get('http://127.0.0.1:8000/restaurant/menu/')
 
         # Check if the request was successful (status code 200)
-        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         # Retrieve all Menu objects from the database
         menus = Menu.objects.all()
