@@ -82,14 +82,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
-    # 'CONN_MAX_AGE': 0, it breaks the code
-    # 'AUTOCOMMIT': True
-    #  'default': {
-    #         'ENGINE': 'django.db.backends.mysql',
-    #         'OPTIONS': {
-    #             'read_default_file': '/path/to/my.cnf',
-    #         },
-    #     }
     'default': {
 
         'ENGINE': 'django.db.backends.mysql',
@@ -153,4 +145,4 @@ REST_FRAMEWORK = {
     ],
 }
 
-DJOSER={"USER_ID_FIELD":"username"}
+DJOSER = {"USER_ID_FIELD": "username"}
